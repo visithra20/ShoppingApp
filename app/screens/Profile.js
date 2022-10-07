@@ -1,10 +1,12 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, SafeAreaView } from "react-native";
 const Profile = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+    <View >
       <Text>Profile </Text>
     </View>
+    </SafeAreaView>
   );
 };
 
@@ -12,7 +14,7 @@ export default Profile ;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
